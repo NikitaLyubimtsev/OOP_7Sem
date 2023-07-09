@@ -9,8 +9,8 @@ class ST500Info implements SensorTemperature {
                 return 1;
             }
 
-            public double temperature() {
-                return 22.0;
+            public Float temperature() {
+                return 22.0F;
             }
 
             public int year() {
@@ -36,8 +36,8 @@ class ST500Info implements SensorTemperature {
     }
 
     @Override
-    public double temperature() {
-        return 0;
+    public Float temperature() {
+        return 22.0F;
     }
 
     @Override

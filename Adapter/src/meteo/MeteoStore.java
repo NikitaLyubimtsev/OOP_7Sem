@@ -11,15 +11,4 @@ class MeteoStore {
 				meteoSensor.getPressure());
         return true;
     }
-
-    boolean save(SensorTemperature sensorTemperature) {
-        System.out.format("Saving data from sensor [%d] at %s-%s-%s%n temperature - %f ; humidity - non ; pressure - non \n\r",
-                sensorTemperature.identifier(),
-                sensorTemperature.year(),
-                sensorTemperature.day(),
-                sensorTemperature.second(),
-                sensorTemperature.temperature()
-        );
-        return true;
-    }
 }

@@ -12,8 +12,6 @@ public class Main {
         meteoDb.save(ms200_1);
 
         // Здесь надо вызвать метод getData у класса ST500Info. Полученные данные отправить в метод save объекта meteoDb
-        ST500Info st500Info_1 = new ST500Info();
-        //System.out.println(st500Info_1.getData());
-        meteoDb.save(st500Info_1.getData());
+        meteoDb.save(new ST500InfoAdapter(new ST500Info()));
     }
 }
